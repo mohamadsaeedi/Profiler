@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ProfileMonster.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    
+    ProfileMonster *monster = [[ProfileMonster alloc] init];
+    
+    monster.firstName = @"hello";
+    monster.surname = @"World";
+    
+    
+    NSLog(@"First Name: %@,  Last Name: %@", monster.firstName, monster.surname);
 }
 
 - (void)didReceiveMemoryWarning
